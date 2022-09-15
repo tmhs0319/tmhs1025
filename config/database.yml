@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: tmhs1025_development
+  database: protospace_tmhs1025_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: tmhs1025_test
+  database: protospace_tmhs1025_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: tmhs1025_production
-  username: tmhs1025
-  password: <%= ENV['TMHS1025_DATABASE_PASSWORD'] %>
+  database: protospace_tmhs1025_production
+  username: protospace_tmhs1025
+  password: <%= ENV['PROTOSPACE_TMHS1025_DATABASE_PASSWORD'] %>
